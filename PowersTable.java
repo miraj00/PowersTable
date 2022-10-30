@@ -38,7 +38,12 @@ public class PowersTable {
 		}	
 		
 		System.out.println();
-		System.out.println(" Multiplication Table" + "\n");
+		System.out.println(" ======   Multiplication Table  ======= " + "\n");
+		
+		
+		// For Triangle style Table  ========================================================================================
+		
+		System.out.println("Triangle Style Output : ");
 		System.out.print("  ");
 
         for (int i =1; i <=num ; i++ ) {
@@ -46,15 +51,12 @@ public class PowersTable {
 		System.out.print( i + "    ");                              // To Print horizontal first line of numbers
 		}
 		System.out.println();
-
-		
 		
 		for (int i =1; i <=num ; i++ ) {
 		
 		System.out.print("  " + "="+ "  ");							// To Print double line under the numbers
 		}
 		System.out.println();
-		
 		
 		
 		for (int i=1; i<=num; i++) {								
@@ -69,8 +71,42 @@ public class PowersTable {
 			
 			System.out.println("");
 		}
+		// End 
+		
+
+
+		// For Square style Table   ===============================================================================================
+		System.out.println("\n" + "\n" + "Square Style Output : " );
+		System.out.print("  ");
+
+        for (int i =1; i <=num ; i++ ) {
+		
+		System.out.print( i + "    ");                              // To Print horizontal first line of numbers
+		}
+		System.out.println();
+		
+		for (int i =1; i <=num ; i++ ) {
+		
+		System.out.print("  " + "="+ "  ");							// To Print double line under the numbers
+		}
+			System.out.println();
+		 
+		for (int i=1; i<=num; i++) {								
+						 
+			System.out.print( i + "|");  							// To Print vertical line of numbers 
+		
+			
+				for (int j=1; j<=num; ++j) {                        // instead of i, changing to num creates square table since increasing in loop iteration
+			
+				System.out.print( (i * j) + "    ");				// To Print multiplication of numbers loop
+				}
+			
+			System.out.println("");
+		}
+		//End 
 		
 		
+		// Question to continue or not ============================================================================================
 	    System.out.print(" Continue ? (Y/N) : "); 
         String var= sc.next();
    
